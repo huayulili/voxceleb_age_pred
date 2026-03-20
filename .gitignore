@@ -1,0 +1,11 @@
+.venv/
+.helloagents/
+__pycache__/
+*.py[cod]
+*.egg-info/
+outputs/**/*.pt
+outputs/**/*.pth
+outputs/**/*.ckpt
+outputs/**/*.bin
+outputs/**/train.log
+outputs/**/artifacts/

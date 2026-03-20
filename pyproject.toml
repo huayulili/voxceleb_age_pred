@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voxceleb-age-pred"
+version = "0.1.0"
+description = "Voice age prediction training pipeline for VoxCeleb"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  "huggingface-hub>=0.31,<1.0",
+  "librosa>=0.10.2,<1.0",
+  "matplotlib>=3.9,<4.0",
+  "numpy>=1.26,<3.0",
+  "pandas>=2.2,<3.0",
+  "praat-parselmouth>=0.4.5,<1.0",
+  "scikit-learn>=1.5,<2.0",
+  "scipy>=1.11,<2.0",
+  "tensorboard>=2.18,<3.0",
+  "tqdm>=4.66,<5.0",
+  "transformers>=4.51,<5.0",
+]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
